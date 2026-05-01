@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowLeaf – Own Your Glow | Premium Skincare</title>
+    <meta name="description" content="GlowLeaf is a bold, premium skincare brand that fuses the power of nature with cutting-edge science. Own your glow with our confidence-boosting skincare line.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== CURSOR GLOW TRAIL ===== -->
+    <div id="cursor-glow" class="cursor-glow"></div>
+
+    <!-- ===== FLOATING PARTICLES CANVAS ===== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <span class="logo-icon">🍃</span>
+                <span class="logo-text">Glow<span class="logo-highlight">Leaf</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#benefits" class="nav-link">Benefits</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-effects">
+            <div class="hero-gradient-orb orb-1"></div>
+            <div class="hero-gradient-orb orb-2"></div>
+            <div class="hero-gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content" data-parallax="0.15">
+            <p class="hero-tag" data-reveal>// SKINCARE REVOLUTION</p>
+            <h1 class="hero-title" data-reveal>
+                <span class="hero-title-line">GlowLeaf –</span>
+                <span class="hero-title-line hero-title-accent">Own Your <span class="glitch-text" data-text="Glow">Glow</span></span>
+            </h1>
+            <p class="hero-subtitle" data-reveal>We didn't come to play nice. Bold formulas. Raw ingredients. Unapologetic results. Your skin's new power move starts here.</p>
+            <div class="hero-cta" data-reveal>
+                <a href="#products" class="btn btn-primary" id="btn-shop">
+                    <span class="btn-text">Shop Now</span>
+                    <span class="btn-ripple"></span>
+                </a>
+                <a href="#products" class="btn btn-outline" id="btn-explore">
+                    <span class="btn-text">Explore Products</span>
+                    <span class="btn-ripple"></span>
+                </a>
+            </div>
+            <div class="hero-scroll-indicator" data-reveal>
+                <div class="scroll-line"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </div>
+        <!-- Floating leaf SVGs -->
+        <div class="floating-leaf leaf-1" data-float>
+            <svg viewBox="0 0 80 120" fill="none"><path d="M40 0C40 0 80 40 80 80C80 100 62 120 40 120C18 120 0 100 0 80C0 40 40 0 40 0Z" fill="currentColor"/><line x1="40" y1="10" x2="40" y2="110" stroke="rgba(0,0,0,0.2)" stroke-width="1.5"/></svg>
+        </div>
+        <div class="floating-leaf leaf-2" data-float>
+            <svg viewBox="0 0 80 120" fill="none"><path d="M40 0C40 0 80 40 80 80C80 100 62 120 40 120C18 120 0 100 0 80C0 40 40 0 40 0Z" fill="currentColor"/><line x1="40" y1="10" x2="40" y2="110" stroke="rgba(0,0,0,0.2)" stroke-width="1.5"/></svg>
+        </div>
+        <div class="floating-leaf leaf-3" data-float>
+            <svg viewBox="0 0 80 120" fill="none"><path d="M40 0C40 0 80 40 80 80C80 100 62 120 40 120C18 120 0 100 0 80C0 40 40 0 40 0Z" fill="currentColor"/><line x1="40" y1="10" x2="40" y2="110" stroke="rgba(0,0,0,0.2)" stroke-width="1.5"/></svg>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-label" data-reveal>
+                    <span class="section-number">01</span>
+                    <span class="section-tag">// WHO WE ARE</span>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title about-title" data-reveal>
+                        Nature's <span class="text-accent">Fury.</span><br>
+                        Science's <span class="text-accent">Precision.</span>
+                    </h2>
+                    <p class="about-text" data-reveal>GlowLeaf was born from a rebellion against boring skincare. We're not here to whisper—we're here to <strong>command attention</strong>. Every formula is a weapon of mass confidence, engineered with the purest botanicals and backed by relentless science.</p>
+                    <p class="about-text" data-reveal>We stripped away the fluff. No filler ingredients. No empty promises. Just raw, potent, nature-powered formulations that deliver results you can <strong>see and feel</strong>—from the very first drop.</p>
+                    <div class="about-stats" data-reveal>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="97">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label">Natural Ingredients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span><span class="stat-suffix">K+</span>
+                            <span class="stat-label">Glow Warriors</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="12">0</span>
+                            <span class="stat-label">Award Wins</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS SECTION ===== -->
+    <section id="products" class="products-section">
+        <div class="section-container">
+            <div class="products-header">
+                <div class="about-label" data-reveal>
+                    <span class="section-number">02</span>
+                    <span class="section-tag">// THE LINEUP</span>
+                </div>
+                <h2 class="section-title" data-reveal>
+                    Weapons of <span class="text-accent">Mass Glow</span>
+                </h2>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-tilt data-reveal data-antigravity>
+                    <div class="product-card-glow"></div>
+                    <div class="product-image-wrapper">
+                        <img src="images/face-serum.png" alt="GlowLeaf Radiance Face Serum" class="product-image" loading="lazy">
+                        <div class="product-badge">BESTSELLER</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Radiance Serum</h3>
+                        <p class="product-desc">Concentrated botanical power. One drop to rule them all.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$48</span>
+                            <button class="btn-add-cart" aria-label="Add Radiance Serum to cart">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card product-card--offset" data-tilt data-reveal data-antigravity>
+                    <div class="product-card-glow"></div>
+                    <div class="product-image-wrapper">
+                        <img src="images/moisturizer.png" alt="GlowLeaf Hydra Shield Moisturizer" class="product-image" loading="lazy">
+                        <div class="product-badge product-badge--new">NEW</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Hydra Shield</h3>
+                        <p class="product-desc">72-hour moisture lock. Dewy armor for your skin.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$42</span>
+                            <button class="btn-add-cart" aria-label="Add Hydra Shield to cart">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-tilt data-reveal data-antigravity>
+                    <div class="product-card-glow"></div>
+                    <div class="product-image-wrapper">
+                        <img src="images/cleanser.png" alt="GlowLeaf Detox Cleanser" class="product-image" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Detox Cleanser</h3>
+                        <p class="product-desc">Deep purge. Strip away the day, keep your glow.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$36</span>
+                            <button class="btn-add-cart" aria-label="Add Detox Cleanser to cart">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card product-card--offset" data-tilt data-reveal data-antigravity>
+                    <div class="product-card-glow"></div>
+                    <div class="product-image-wrapper">
+                        <img src="images/sunscreen.png" alt="GlowLeaf Solar Veil Sunscreen" class="product-image" loading="lazy">
+                        <div class="product-badge product-badge--hot">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Solar Veil SPF 50+</h3>
+                        <p class="product-desc">Invisible shield. Zero white cast. All-day defense.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$38</span>
+                            <button class="btn-add-cart" aria-label="Add Solar Veil to cart">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BENEFITS SECTION ===== -->
+    <section id="benefits" class="benefits-section">
+        <div class="section-container">
+            <div class="about-label" data-reveal>
+                <span class="section-number">03</span>
+                <span class="section-tag">// WHY GLOWLEAF</span>
+            </div>
+            <h2 class="section-title" data-reveal>
+                Built <span class="text-accent">Different.</span>
+            </h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-reveal data-antigravity>
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4C24 4 44 18 44 30C44 38 35 44 24 44C13 44 4 38 4 30C4 18 24 4 24 4Z"/><line x1="24" y1="12" x2="24" y2="38"/><path d="M24 24C28 20 32 22 32 26" opacity="0.5"/></svg>
+                    </div>
+                    <h3 class="benefit-title">Natural Ingredients</h3>
+                    <p class="benefit-text">97% plant-based. Zero compromise. Pure botanical fury in every formula.</p>
+                </div>
+                <div class="benefit-card" data-reveal data-antigravity>
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="10"/><line x1="24" y1="4" x2="24" y2="10"/><line x1="24" y1="38" x2="24" y2="44"/><line x1="4" y1="24" x2="10" y2="24"/><line x1="38" y1="24" x2="44" y2="24"/><line x1="9.86" y1="9.86" x2="14.1" y2="14.1"/><line x1="33.9" y1="33.9" x2="38.14" y2="38.14"/><line x1="9.86" y1="38.14" x2="14.1" y2="33.9"/><line x1="33.9" y1="14.1" x2="38.14" y2="9.86"/></svg>
+                    </div>
+                    <h3 class="benefit-title">Instant Glow</h3>
+                    <p class="benefit-text">Visible radiance from day one. Because waiting is overrated.</p>
+                </div>
+                <div class="benefit-card" data-reveal data-antigravity>
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4L30 16H42L32 24L36 38L24 30L12 38L16 24L6 16H18L24 4Z"/></svg>
+                    </div>
+                    <h3 class="benefit-title">Skin Repair</h3>
+                    <p class="benefit-text">Advanced cell renewal tech meets ancient herbal wisdom. Your skin reborn.</p>
+                </div>
+                <div class="benefit-card" data-reveal data-antigravity>
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 44C24 44 8 34 8 20C8 14 12 8 20 8C23 8 24 10 24 10C24 10 25 8 28 8C36 8 40 14 40 20C40 34 24 44 24 44Z"/></svg>
+                    </div>
+                    <h3 class="benefit-title">Long-lasting Hydration</h3>
+                    <p class="benefit-text">72-hour moisture matrix. Lock it in. Keep it dewy. All day, all night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-container">
+            <div class="about-label" data-reveal>
+                <span class="section-number">04</span>
+                <span class="section-tag">// THE VIBE</span>
+            </div>
+            <h2 class="section-title" data-reveal>
+                Visual <span class="text-accent">Fuel.</span>
+            </h2>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--large" data-reveal>
+                    <img src="images/gallery-1.png" alt="GlowLeaf beauty editorial – radiant skin with botanical accents" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Editorial</span>
+                    </div>
+                    <div class="gallery-glitch"></div>
+                </div>
+                <div class="gallery-item" data-reveal>
+                    <img src="images/gallery-2.png" alt="GlowLeaf product flatlay on dark marble" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Collection</span>
+                    </div>
+                    <div class="gallery-glitch"></div>
+                </div>
+                <div class="gallery-item" data-reveal>
+                    <img src="images/face-serum.png" alt="GlowLeaf hero product – Radiance Serum" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Hero Product</span>
+                    </div>
+                    <div class="gallery-glitch"></div>
+                </div>
+                <div class="gallery-item gallery-item--tall" data-reveal>
+                    <img src="images/moisturizer.png" alt="GlowLeaf Hydra Shield moisturizer closeup" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Hydra Shield</span>
+                    </div>
+                    <div class="gallery-glitch"></div>
+                </div>
+                <div class="gallery-item" data-reveal>
+                    <img src="images/sunscreen.png" alt="GlowLeaf Solar Veil sunscreen" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Solar Veil</span>
+                    </div>
+                    <div class="gallery-glitch"></div>
+                </div>
+                <div class="gallery-item" data-reveal>
+                    <img src="images/cleanser.png" alt="GlowLeaf Detox Cleanser" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label">Detox</span>
+                    </div>
+                    <div class="gallery-glitch"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="about-label" data-reveal>
+                        <span class="section-number">05</span>
+                        <span class="section-tag">// GET IN TOUCH</span>
+                    </div>
+                    <h2 class="section-title" data-reveal>
+                        Let's <span class="text-accent">Talk.</span>
+                    </h2>
+                    <p class="contact-text" data-reveal>Got questions? Want to collaborate? Or just want to tell us how much you love your glow? Drop us a line.</p>
+                    <div class="social-links" data-reveal>
+                        <a href="#" class="social-link" aria-label="Instagram" id="social-ig">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter / X" id="social-tw">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4L10.5 12.5M20 20L13.5 11.5M10.5 12.5L20 4M10.5 12.5L4 20M13.5 11.5L20 4M13.5 11.5L4 20"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok" id="social-tt">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2V16C12 18.2 10.2 20 8 20C5.8 20 4 18.2 4 16C4 13.8 5.8 12 8 12"/><path d="M12 2C12 2 12 6 18 8"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube" id="social-yt">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" data-reveal>
+                    <div class="form-group">
+                        <input type="text" id="form-name" name="name" placeholder=" " required autocomplete="name">
+                        <label for="form-name">Your Name</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" name="email" placeholder=" " required autocomplete="email">
+                        <label for="form-email">Your Email</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" name="message" rows="4" placeholder=" " required></textarea>
+                        <label for="form-message">Your Message</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-ripple"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🍃</span>
+                    <span class="logo-text">Glow<span class="logo-highlight">Leaf</span></span>
+                </div>
+                <p class="footer-copy">&copy; 2026 GlowLeaf. All rights reserved. Own Your Glow.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== ANTI-GRAVITY TOGGLE ===== -->
+    <button class="antigravity-btn" id="antigravity-btn" aria-label="Toggle Anti-Gravity Mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2V6M12 18V22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12H6M18 12H22M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93"/></svg>
+        <span class="antigravity-label">Anti-Gravity</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
